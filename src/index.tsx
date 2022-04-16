@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { HashRouter } from "react-router-dom";
 
 import App from "./App";
 
 import "./index.scss";
 
 ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>,
+    <HashRouter>
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>
+    </HashRouter>,
     document.getElementById("root")
 );
