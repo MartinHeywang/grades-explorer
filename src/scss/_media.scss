@@ -1,0 +1,14 @@
+$breakpoint: 40em;
+
+@mixin desktop-only {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin mobile-only {
+    // -1px to avoid the point where both media queries are valid
+    @media (max-width: calc($breakpoint - 1px)) {
+        @content;
+    }
+}
