@@ -1,0 +1,19 @@
+.Button {
+    padding: 0.5em 1.5em;
+    border: 0;
+    background-color: var(--clr-primary-500);
+
+    color: inherit;
+    font: inherit;
+    font-weight: bold;
+
+    &:hover {
+        filter: brightness(70%);
+        cursor: pointer;
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--clr-primary-500);
+        outline-offset: 2px;
+    }
+}
