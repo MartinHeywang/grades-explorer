@@ -1,3 +1,7 @@
+@use "./utils" as utils;
+@use "./media" as media;
+@use "./color" as clr;
+
 *,
 ::before,
 ::after {
@@ -11,4 +15,8 @@ body {
 
     font-family: "Roboto", sans-serif;
     color: #101010;
+}
+
+.container {
+    @include utils.container;
 }

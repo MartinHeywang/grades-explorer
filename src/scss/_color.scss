@@ -1,0 +1,19 @@
+$theme: (
+    primary: (
+        100: hsl(210, 80%, 85%),
+        500: hsl(210, 100%, 56%),
+        900: hsl(210, 80%, 17%),
+    ),
+    neutral: (
+        100: #f0f0f0,
+        900: #0a0a0a,
+    ),
+);
+
+@each $palette, $colors in $theme {
+    @each $id, $value in $colors {
+        :root {
+            --clr-#{$palette}-#{$id}: #{$value};
+        }
+    }
+}
