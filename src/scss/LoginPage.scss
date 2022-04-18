@@ -1,0 +1,39 @@
+@use "./media" as media;
+
+.LoginPage__title {
+    margin-top: 2em;
+}
+
+.LoginPage__sections {
+    display: flex;
+    gap: 1em;
+    
+    @include media.mobile-only {
+        flex-direction: column;
+    }
+
+    @include media.desktop-only {
+        & > * {
+            flex-basis: 100%;
+        }
+    }
+}
+
+.LoginPage__section {
+    padding: 1em;
+    background-color: var(--clr-primary-100);
+
+    h2 {
+        margin-bottom: .2em;
+        margin-top: 0;
+    }
+
+    p {
+        margin-top: 0;
+        color: var(--clr-primary-900);
+    }
+}
+
+.LoginPage__button {
+    margin-top: 2em;
+}
