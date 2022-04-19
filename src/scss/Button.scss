@@ -16,4 +16,8 @@
         outline: 2px solid var(--clr-primary-500);
         outline-offset: 2px;
     }
+
+    &:disabled {
+        filter: grayscale(100%);
+    }
 }

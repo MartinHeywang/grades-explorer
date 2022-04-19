@@ -8,9 +8,11 @@ interface Props {
     className?: string;
 
     action?: string | (() => void);
+
+    disabled?: boolean;
 }
 
-const Button: FC<Props> = ({ className = "", action, children }) => {
+const Button: FC<Props> = ({ className = "", action, disabled, children }) => {
     const navigate = useNavigate();
 
     function handleClick() {
@@ -25,7 +27,7 @@ const Button: FC<Props> = ({ className = "", action, children }) => {
     }
 
     return (
-        <button className={`Button ${className}`} onClick={handleClick}>
+        <button className={`Button ${className}`} onClick={handleClick} disabled={disabled}>
             {children}
         </button>
     );

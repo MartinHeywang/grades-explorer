@@ -1,5 +1,7 @@
 import React, { FC, Suspense } from "react";
 
+import "../scss/Page.scss";
+
 const Header = React.lazy(() => import("./Header"));
 
 interface Props {

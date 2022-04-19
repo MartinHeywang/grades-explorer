@@ -14,3 +14,7 @@ ReactDOM.render(
     </HashRouter>,
     document.getElementById("root")
 );
+
+export function hello() {
+    console.log("hello");
+}
